@@ -1,20 +1,14 @@
 ﻿namespace CRUDDouglas
 {
-    internal class Program
+    class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("Please insert Title");
-            var Title = Console.ReadLine();
 
-            Console.WriteLine("Please insert Price");
-            var Price = Console.ReadLine();
+            Console.WriteLine("Welcome to your own personal Douglas wishlist!");
+            Console.WriteLine("What would you like to do?")
+                Console.WriteLine("");
 
-            var ConvertedPrice = Convert.ToInt32(Price);
-            var WishListItem = new WhishlistItem();
-            WishListItem.Title = Title;
-            Console.WriteLine(WishListItem.Title);
         }
     }
 }
