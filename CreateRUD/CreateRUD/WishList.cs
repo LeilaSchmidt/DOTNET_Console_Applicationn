@@ -3,15 +3,15 @@
     public class Wishlist
     {
         public string title;
-        public string category;
+        public string brand;
         public double price;
         public string[] enteredValues;
 
 
-        public Wishlist(string title, string category, double price)
+        public Wishlist(string title, string brand, double price)
         {
             this.title = title;
-            this.category = category;
+            this.brand = brand;
             this.price = price;
 
         }
@@ -24,12 +24,13 @@
             Item1.title = Console.ReadLine();
 
             Console.WriteLine("What is the name of the products' brand?");
-            Item1.category = Console.ReadLine();
+            Item1.brand = Console.ReadLine();
 
             Console.WriteLine("What is the price of the product?");
             Item1.price = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine(Item1);
+            Console.WriteLine($"Are these inputs correct? Name: {Item1.title}, Brand: {Item1.brand}, Price: {Item1.price}");
+            Console.ReadLine();
         }
 
         public static void updateListItem()
@@ -39,7 +40,8 @@
 
         public static void readListItem()
         {
-            Console.WriteLine(Item1.title);
+            Console.WriteLine("hello");
+            Console.ReadLine();
         }
 
         public static void deleteListItem()

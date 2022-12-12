@@ -13,7 +13,20 @@
             }
             else if (userInput == "read")
             {
-                Console.WriteLine();
+                Wishlist.readListItem();
+            } 
+            else if (userInput == "update")
+            {
+                Wishlist.updateListItem();
+            }
+            else if (userInput == "delete")
+            {
+                Wishlist.deleteListItem();
+            }
+            else
+            {
+                Console.WriteLine("False input. Please try again.");
+                Console.ReadLine();
             }
         }
     }
